@@ -1,0 +1,42 @@
+
+
+customerListUriPath:
+  /customers-service/api/customerList
+
+customerCreateUriPath:
+  /customers-service/api/createCustomer
+
+customerUpdateUriPath:
+  /customers-service/api/customer/{customerId}
+
+customerDeleteUriPath:
+  /customers-service/api/customer/{customerId}
+
+customerUriPath:
+  /customers-service/api/customer/{customerId}
+
+
+userUriPath:
+  /users-service/api/user/{username}
+
+
+
+server:
+  context-path: /bactrian
+  port: 8090
+
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+    service-url:
+      defaultZone: http://bactrian-eureka:8761/eureka/
+
+
+
+
+
+
+
+
